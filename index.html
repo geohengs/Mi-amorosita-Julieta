@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Ti 💜</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Fondo de corazones -->
+    <div id="hearts-container"></div>
+
+    <!-- 🎵 Música -->
+    <audio id="music1" src="assets/music1.mp3" loop></audio>
+    <audio id="music2" src="assets/music2.mp3" loop></audio>
+    <audio id="music3" src="assets/pregunta-final.mp3" loop></audio>
+
+    <!-- =========================
+         ESCENA 1 – CARTA INICIAL
+    ========================== -->
+    <section id="scene1" class="fade">
+
+        <div class="side-photos">
+            <img src="assets/img1.jpg" class="memory-photo reveal">
+            <img src="assets/img2.jpg" class="memory-photo reveal">
+        </div>
+
+        <div class="card center-letter reveal">
+            <h2>Para mi Julieta 💜</h2>
+            <p>
+                Quiero agradecerte de corazón por estar aquí, tomarte el tiempo de poder leer y ver este detalle.
+                Agradezco y valoro todo el tiempo que has estado aquí conmigo mi niña linda, sé que las cosas
+                no fueron como ninguno quería. Sin embargo este detalle no es para recordar lo malo que haya sucedido antes,
+                sino para dar un paso a una etapa mucho mejor. 
+                
+            </p>
+
+            <button class="btn" onclick="goToScene2()">Un pequeño detalle con mucho amor para mi princesa</button>
+        </div>
+
+        <div class="side-photos">
+            <img src="assets/img3.jpg" class="memory-photo reveal">
+            <img src="assets/img4.jpg" class="memory-photo reveal">
+        </div>
+
+    </section>
+
+    <!-- =========================
+         ESCENA 2 – RECUERDOS
+    ========================== -->
+    <section id="scene2" class="hidden fade">
+
+        <h2 class="section-title">Nuestro pequeño baúl de recuerdos 💜</h2>
+
+        <div class="photo-grid">
+
+            <div class="photo-card reveal">
+                <img src="assets/img5.jpg" class="memory-photo reveal">
+                <p>Esos recuerdos cuando jugábamos fortnite</p>
+            </div>
+
+            <div class="photo-card reveal">
+                <img src="assets/img6.jpg" class="memory-photo reveal">
+                <p>Ese momento cuando nos terminamos it takes, que nos traía viciado al comienzo de nuestra historia</p>
+            </div>
+
+            <div class="photo-card reveal">
+                <img src="assets/img7.jpg" class="memory-photo reveal">
+                <p>Recuerdo esa vez que te pusiste como niña viendo esos animalitos del juego jsjs, qué bonito</p>
+            </div>
+
+            <div class="photo-card reveal">
+                <img src="assets/img8.jpg" class="memory-photo reveal">
+                <p>El momento que me transmitiste por primera vez fire force, gracias a ti, hoy en día me logré ver todo el anime,
+                    esperando a que salga la continuación para verlo contigo.
+                </p>
+            </div>
+
+             <div class="photo-card reveal">
+                <img src="assets/img9.jpg" class="memory-photo reveal">
+                <p>Cuando hicimos el contrato en que sea tu dúo, cómo olvidarlo? recuerda que no tiene fecha de vencimiento.</p>
+            </div>
+
+             <div class="photo-card reveal">
+                <img src="assets/img10.jpg" class="memory-photo reveal">
+                <p>Cuando querías convertirte en un personaje más de fnaf.</p>
+            </div>
+
+        </div>
+
+        <div style="text-align:center;">
+        <button class="btn pulse" onclick="showFinalQuestion()">
+    Clickea aquí mi bonita 💜
+</button>
+        </div>
+
+    </section>
+
+    <!-- =========================
+         ESCENA 3 – LA PREGUNTA
+    ========================== -->
+    <section id="scene3" class="hidden fade blur-scene">
+        
+
+        <div class="card final-card reveal">
+            <h2>Mi amorosita preciosa, luna de mi vida, quisiera saber si...</h2>
+            <p class="big-text">
+                ¿Puedo ser tu novio?
+            </p>
+        </div>
+
+    </section>
+
+        <!-- 🔍 Lightbox -->
+<div id="lightbox" class="hidden">
+    <span id="closeLightbox">✕</span>
+    <img id="lightboxImg">
+</div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
